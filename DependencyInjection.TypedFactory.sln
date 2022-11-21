@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hemel.DependencyInjection.TypedFactory", "Hemel.DependencyInjection.TypedFactory\Hemel.DependencyInjection.TypedFactory.csproj", "{8D3D7F63-FD52-4538-8280-EA318A943B55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hemel.DependencyInjection.TypedFactory.Tests", "Hemel.DependencyInjection.TypedFactory.Tests\Hemel.DependencyInjection.TypedFactory.Tests.csproj", "{B53E1AE9-4832-4235-B627-4954AEFCDF12}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D3D7F63-FD52-4538-8280-EA318A943B55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D3D7F63-FD52-4538-8280-EA318A943B55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D3D7F63-FD52-4538-8280-EA318A943B55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D3D7F63-FD52-4538-8280-EA318A943B55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B53E1AE9-4832-4235-B627-4954AEFCDF12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B53E1AE9-4832-4235-B627-4954AEFCDF12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B53E1AE9-4832-4235-B627-4954AEFCDF12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B53E1AE9-4832-4235-B627-4954AEFCDF12}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
