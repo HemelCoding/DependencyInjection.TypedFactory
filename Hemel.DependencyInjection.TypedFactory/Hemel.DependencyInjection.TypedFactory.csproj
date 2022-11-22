@@ -4,10 +4,45 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+
+    <!-- Package -->
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.0-dev</Version>
+    <PackageReleaseNotes><![CDATA[
+      - Expose an `AddFactory<>()` facility to `IServiceCollection` that auto-implements and registers a typed factory.
+    ]]></PackageReleaseNotes>
+    <Authors>Loïc Morvan</Authors>
+    <Company>Hemel</Company>
+    <PackageTags>Microsoft DependencyInjection;DI;Typed factory</PackageTags>
+    <Description><![CDATA[
+      This Hemel.DependencyInjection.TypedFactory package adds an extension method `AddTypedFactory<>` to the type `Microsoft.Extensions.DependencyInjection.IServiceCollection`.
+      This extension method will implement and register to the service collection a typed factory that is able to instantiate components previously registered to that service collection.
+      The typed factory interface is given to the `AddTypedFactory<>` method.
+      Parameters that are not given to the creation methods of the factory interface will be resolved from the service collection, allowing to inject services without having to explictly declare them to the creation method.
+    ]]></Description>
+    <Copyright>Copyright © Loïc Morvan 2022</Copyright>
+    <PackageProjectUrl>https://github.com/HemelCoding/DependencyInjection.TypedFactory</PackageProjectUrl>
+    <PackageIcon></PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+
+    <!-- SourceLink -->
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" PackagePath="." Pack="true" />
   </ItemGroup>
 
 </Project>
