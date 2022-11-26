@@ -22,7 +22,7 @@
     ]]></Description>
     <Copyright>Copyright © Loïc Morvan 2022</Copyright>
     <PackageProjectUrl>https://github.com/HemelCoding/DependencyInjection.TypedFactory</PackageProjectUrl>
-    <PackageIcon></PackageIcon>
+    <PackageIcon>Icon.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
 
@@ -43,6 +43,7 @@
 
   <ItemGroup>
     <None Include="README.md" PackagePath="." Pack="true" />
+    <None Include="Icon.png" PackagePath="." Pack="true" />
   </ItemGroup>
 
 </Project>
