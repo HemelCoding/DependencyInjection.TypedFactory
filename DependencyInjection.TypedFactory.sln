@@ -7,6 +7,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hemel.DependencyInjection.T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hemel.DependencyInjection.TypedFactory.Tests", "Hemel.DependencyInjection.TypedFactory.Tests\Hemel.DependencyInjection.TypedFactory.Tests.csproj", "{B53E1AE9-4832-4235-B627-4954AEFCDF12}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample", "Sample\Sample.csproj", "{219600F3-443B-44BD-B1E6-A13587CC7AA4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{6A7BD710-4896-4A80-B64B-5FAD6E566437}"
+	ProjectSection(SolutionItems) = preProject
+		docs\_config.yml = docs\_config.yml
+		docs\index.md = docs\index.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +32,9 @@ Global
 		{B53E1AE9-4832-4235-B627-4954AEFCDF12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B53E1AE9-4832-4235-B627-4954AEFCDF12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B53E1AE9-4832-4235-B627-4954AEFCDF12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{219600F3-443B-44BD-B1E6-A13587CC7AA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{219600F3-443B-44BD-B1E6-A13587CC7AA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{219600F3-443B-44BD-B1E6-A13587CC7AA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{219600F3-443B-44BD-B1E6-A13587CC7AA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -1,3 +1,1 @@
-```csharp
-class Test
-```
+# Hemel.DependencyInjection.TypedFactory
