@@ -1,5 +1,3 @@
-# Hemel.DependencyInjection.TypedFactory
-
 Let's say we want to create instances after an object's initialization, using a factory:
 
 ```csharp
