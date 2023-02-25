@@ -28,22 +28,16 @@ internal static class TypedFactoryCreator
 
         foreach (var method in factoryType.GetMethods().Where(x => x.Name.StartsWith("Create")))
         {
-            var serviceDescriptor = services.FirstOrDefault(x => x.ServiceType == method.ReturnType);
-            if (serviceDescriptor is null)
-            {
-                throw new Exception($"An implementation was not found for the service {method.ReturnType}");
-            }
+            var serviceDescriptor = services.FirstOrDefault(x => x.ServiceType == method.ReturnType)
+                ?? throw new Exception($"An implementation was not found for the service {method.ReturnType}");
 
             if (serviceDescriptor.Lifetime is not ServiceLifetime.Transient)
             {
                 throw new Exception($"The lifetime of service {method.ReturnType} is not transient.");
             }
 
-            var componentType = serviceDescriptor.ImplementationType;
-            if (componentType is null)
-            {
-                throw new Exception($"The service {method.ReflectedType} does not have an implementation type.");
-            }
+            var componentType = serviceDescriptor.ImplementationType
+                ?? throw new Exception($"The service {method.ReflectedType} does not have an implementation type.");
 
             ImplementCreateMethod(
                 typeBuilder,
