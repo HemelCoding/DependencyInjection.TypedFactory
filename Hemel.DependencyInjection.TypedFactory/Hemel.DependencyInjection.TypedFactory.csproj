@@ -43,7 +43,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="README.md" PackagePath="." Pack="true" />
+    <None Include="../README.md" PackagePath="." Pack="true" />
     <None Include="Icon.png" PackagePath="." Pack="true" />
   </ItemGroup>
 
